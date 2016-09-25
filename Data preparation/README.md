@@ -18,5 +18,10 @@ Date/Time,Value,Nest Id,Visit Id
 8/01/2014 13:24,61.458,117,4
 8/01/2014 13:54,64.33,117,4
 ```
+
+Will be turned into the following format for bothteh temp and the humidity data:
+```
+Date/Time,Value,Nest Id (comes from the folder name),filename of the data csv
+```
 Each of these `.csv` files are to be merged into a single data set of all observations for all nests. (*in progress*)
 
