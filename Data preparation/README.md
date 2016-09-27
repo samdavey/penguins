@@ -21,8 +21,14 @@ Date/Time,Value,Nest Id,Visit Id
 
 Will be turned into the following format for both the temp and the humidity data:
 ```
-Date/Time,Value,Nest Id (comes from the folder name),filename of the data csv
+Date/Time,
+Value,
+Nest Id (comes from the folder name),
+filename of the data csv
+md5 hash of the record (for identification of duplicates)
 ```
-Each of these `.csv` files are to be merged into a single data set of all observations for all nests. (*in progress*)
+Each of these `.csv` files are to be merged into a single data set of all observations for all nests in files named `a_Temp_merged.csv` and `a_Humidity_merged.csv`. (**in progress**)
 * Files where the filename contains 'ibutton' are excluded.
 * Files commencing with sensor metadata will have the metadata stripped during the append.
+
+At the completion of the appending, duplicate records will be extracted out of the merged file and recorded in files called `b2_Temp_duplicates.csv` and `b2_Humidity_duplicates.csv`. Non-duplicates will be recorded in `b1_Temp_nondupes.csv` and `b1_Humidity_nondupes.csv`.
