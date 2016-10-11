@@ -1,1 +1,3 @@
-/data
+/0_data_files/*.csv
+/0_data_files/*.txt
+/.ipynb_checkpoints
