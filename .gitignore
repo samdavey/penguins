@@ -3,3 +3,5 @@
 *.csv
 *.txt
 /1_data_prep/.ipynb_checkpoints
+*.pyc
+*.pkl
