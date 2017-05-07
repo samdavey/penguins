@@ -62,13 +62,13 @@ def season(date):
     Returns the (Southern Hemisphere) season based on the month of a datetime object.
     '''
     if date.month >= 3 and date.month <= 5:
-        return 'AUTUMN'
+        return 'Autumn'
     elif date.month >= 6 and date.month <= 8:
-        return 'WINTER'
+        return 'Winter'
     elif date.month >= 9 and date.month <= 11:
-        return 'SPRING'
+        return 'Spring'
     elif (date.month >= 1 and date.month <= 2) or date.month == 12:
-        return 'SUMMER'
+        return 'Summer'
     else:
         return None
 
